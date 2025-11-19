@@ -13,7 +13,7 @@ namespace BPNN
 
         private void CreateBpnn_Click(object sender, EventArgs e)
         {
-            nn = new NeuralNet(4, 10, 1);
+            nn = new NeuralNet(4, 1000, 1);
 
 
         }
@@ -169,7 +169,7 @@ namespace BPNN
             bool learned = true;
             double threshold = 0.1;
 
-            
+
             nn.setInputs(0, 0.0);
             nn.setInputs(1, 0.0);
             nn.setInputs(2, 0.0);
@@ -180,14 +180,15 @@ namespace BPNN
 
             nn.setInputs(0, 0.0);
             nn.setInputs(1, 0.0);
-            nn.setInputs(2, 1.0);
+            nn.setInputs(2, 0.0);
             nn.setInputs(3, 1.0);
             nn.run();
             if (Math.Abs(nn.getOuputData(0) - 0.0) > threshold)
                 learned = false;
 
+            //3
             nn.setInputs(0, 0.0);
-            nn.setInputs(1, 1.0);
+            nn.setInputs(1, 0.0);
             nn.setInputs(2, 1.0);
             nn.setInputs(3, 0.0);
             nn.run();
@@ -195,6 +196,82 @@ namespace BPNN
                 learned = false;
 
 
+
+
+            //4
+            nn.setInputs(0, 0.0);
+            nn.setInputs(1, 0.0);
+            nn.setInputs(2, 1.0);
+            nn.setInputs(3, 1.0);
+            nn.run();
+            if (Math.Abs(nn.getOuputData(0) - 0.0) > threshold)
+                learned = false;
+
+
+            //4
+            nn.setInputs(0, 0.0);
+            nn.setInputs(1, 1.0);
+            nn.setInputs(2, 0.0);
+            nn.setInputs(3, 0.0);
+            nn.run();
+            if (Math.Abs(nn.getOuputData(0) - 0.0) > threshold)
+                learned = false;
+
+
+            //5
+            nn.setInputs(0, 0.0);
+            nn.setInputs(1, 1.0);
+            nn.setInputs(2, 0.0);
+            nn.setInputs(3, 0.0);
+            nn.run();
+            if (Math.Abs(nn.getOuputData(0) - 0.0) > threshold)
+                learned = false;
+
+            //6
+            nn.setInputs(0, 0.0);
+            nn.setInputs(1, 1.0);
+            nn.setInputs(2, 0.0);
+            nn.setInputs(3, 1.0);
+            nn.run();
+            if (Math.Abs(nn.getOuputData(0) - 0.0) > threshold)
+                learned = false;
+            //7
+            nn.setInputs(0, 0.0);
+            nn.setInputs(1, 1.0);
+            nn.setInputs(2, 1.0);
+            nn.setInputs(3, 0.0);
+            nn.run();
+            if (Math.Abs(nn.getOuputData(0) - 0.0) > threshold)
+                learned = false;
+            //8
+
+            nn.setInputs(0, 0.0);
+            nn.setInputs(1, 1.0);
+            nn.setInputs(2, 1.0);
+            nn.setInputs(3, 1.0);
+            nn.run();
+            if (Math.Abs(nn.getOuputData(0) - 0.0) > threshold)
+                learned = false;
+            //9
+            nn.setInputs(0, 1.0);
+            nn.setInputs(1, 0.0);
+            nn.setInputs(2, 0.0);
+            nn.setInputs(3, 0.0);
+            nn.run();
+            if (Math.Abs(nn.getOuputData(0) - 0.0) > threshold)
+                learned = false;
+            
+            //10
+            nn.setInputs(0, 1.0);
+            nn.setInputs(1, 0.0);
+            nn.setInputs(2, 0.0);
+            nn.setInputs(3, 1.0);
+            nn.run();
+            if (Math.Abs(nn.getOuputData(0) - 0.0) > threshold)
+                learned = false;
+
+
+            //11
             nn.setInputs(0, 1.0);
             nn.setInputs(1, 0.0);
             nn.setInputs(2, 1.0);
@@ -203,7 +280,43 @@ namespace BPNN
             if (Math.Abs(nn.getOuputData(0) - 0.0) > threshold)
                 learned = false;
 
+            //12
+            nn.setInputs(0, 1.0);
+            nn.setInputs(1, 0.0);
+            nn.setInputs(2, 1.0);
+            nn.setInputs(3, 1.0);
+            nn.run();
+            if (Math.Abs(nn.getOuputData(0) - 0.0) > threshold)
+                learned = false;
             
+            //13
+            nn.setInputs(0, 1.0);
+            nn.setInputs(1, 1.0);
+            nn.setInputs(2, 0.0);
+            nn.setInputs(3, 0.0);
+            nn.run();
+            if (Math.Abs(nn.getOuputData(0) - 0.0) > threshold)
+                learned = false;
+            //14
+            nn.setInputs(0, 1.0);
+            nn.setInputs(1, 1.0);
+            nn.setInputs(2, 0.0);
+            nn.setInputs(3, 1.0);
+            nn.run();
+            if (Math.Abs(nn.getOuputData(0) - 0.0) > threshold)
+                learned = false;
+
+            //15
+            nn.setInputs(0, 1.0);
+            nn.setInputs(1, 1.0);
+            nn.setInputs(2, 1.0);
+            nn.setInputs(3, 0.0);
+            nn.run();
+            if (Math.Abs(nn.getOuputData(0) - 0.0) > threshold)
+                learned = false;
+
+
+            //16
             nn.setInputs(0, 1.0);
             nn.setInputs(1, 1.0);
             nn.setInputs(2, 1.0);
